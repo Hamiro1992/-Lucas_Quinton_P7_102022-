@@ -1,0 +1,156 @@
+.logementDetails{
+    color: $color-1;
+    margin: 2rem;
+
+    p{
+        font-size: 1.25rem;
+    }
+
+    .pageCenter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem 0 1rem 0;
+
+        .titleTags{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: min-content;
+
+            .title {
+                
+                h2{
+                    font-size: 1.80rem;
+                }
+            }
+    
+            .tags{
+                display: flex;
+                margin-left: -2.5rem;
+    
+                li{
+                    width: 10rem;
+                    padding: 0.30rem 0 0.30rem 0;
+                    margin-right: 0.80rem;
+                    text-align: center;
+                    list-style: none;
+                    color: white;
+                    background-color: $color-1;
+                    border-radius: 15px;
+                }
+            }
+    
+        }
+        
+        .hostRating {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding-bottom: 0.80rem;
+    
+                .host {
+                    display: flex;
+                    align-items: center;
+                    width: min-content;
+                    margin-bottom: 2rem;
+                img{
+                    border-radius: 50%;
+                    background-color: $color-2;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+    
+    .logementCollapse{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+            .collapse-item {
+
+                width: 45%;
+            
+                .collapse-title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    color: white;
+                    background-color:$color-1;
+                    border-radius: 5px;
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                    margin-bottom: 2rem;
+                    cursor: pointer;
+                    
+                    img{
+                        width: 1.25rem;
+                    }
+                }
+            
+                .collapse-content {
+                    color: $color-1;
+                    background-color: $color-4;
+                    border-radius: 5px;
+                    padding: 1rem 1rem 0.5rem 1rem;
+                    margin-top: -2rem;
+                    margin-bottom: 2rem;
+                    line-height: 1.5rem;
+                    
+                    ul {
+                        list-style: none; 
+                        padding: 0;
+                        margin: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+
+    margin: 1rem; 
+        
+        .pageCenter {
+            
+            .titleTags{
+                width: 100%;
+
+                .tags {
+                    flex-wrap: wrap;
+
+                    li {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            .hostRating {
+                flex-direction: row-reverse;
+                align-items: center;
+                width: 100%;
+
+                .host {
+                    margin-bottom: 0;
+                }
+
+                .rating {
+
+                    img {
+                        width: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .logementCollapse {
+            display: flex;
+            flex-direction: column;
+
+            .collapse-item {
+                width: 100%;
+            }
+        }
+    }
+}

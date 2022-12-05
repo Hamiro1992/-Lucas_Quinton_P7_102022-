@@ -1,0 +1,42 @@
+.AboutCollapse{
+    padding: 1.5rem 5rem 0 5rem;
+    font-size: 1.25rem;
+
+    .Collapse {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem;
+        cursor: pointer;
+
+        .collapse-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: white;
+            background-color:$color-1;
+            border-radius: 5px;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            margin-bottom: 2rem;
+            cursor: pointer;
+        
+            img{
+                width: 1.25rem;
+            }
+    }
+
+    .collapse-content {
+        color: $color-1;
+        background-color: $color-4;
+        padding: 1rem 1rem 0.5rem 1rem;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+
+    padding: 1.5rem 0 0 0;
+    font-size: 1rem;
+  }
+}

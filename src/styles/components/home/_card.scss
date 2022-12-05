@@ -1,0 +1,57 @@
+.card {
+    list-style: none;
+    position: relative;
+    margin: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.1s;
+    }
+    
+    img {
+        object-fit: cover;
+        width: 19.5rem;
+        height: 19.5rem;
+        border-radius: 10px;
+    }
+    
+    .infos{
+        position: absolute;
+        left: 10%;
+        right: 6%;
+        top: 80%;
+        bottom: 0%;
+        
+        font-style: normal;
+        font-size: 1rem;
+        line-height: 150%;
+        text-shadow: black 0 0 2px;
+        
+        display: flex;
+        align-items: flex-end;
+        
+        color: #FFFFFF;
+    }
+
+    @media screen and (max-width: 720px) {
+
+        background-color: white;
+        height: max-content;
+        margin: 1rem 1rem 0 1rem;
+
+        img {
+            height: 15rem;
+            width: min-content;
+            max-width: 100%;
+        }
+
+        .infos {
+            left: 3%;
+            width: 50%;
+        }
+
+    }
+
+}
