@@ -34,7 +34,7 @@ function LogementDetails({ logement }) {
         <div className="hostRating">
           <div className="host">
             <p>{logement.host.name}</p>
-            <img src={logement.host.picture} alt="" />
+            <img src={logement.host.picture} alt="Hôte" />
           </div>
           <StarRating rating={logement.rating} />
         </div>

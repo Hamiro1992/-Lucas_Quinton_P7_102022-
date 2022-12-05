@@ -6,7 +6,7 @@ const ErrorBody = () => {
     <div className="ErrorBody">
       <h1>404</h1>
       <h2>Oups ! La page que vous demandez n'existe pas.</h2>
-      <NavLink to="/" className="NavLink">
+      <NavLink to="/Home" className="NavLink">
         <p>Retourner sur la page d'acceuil</p>
       </NavLink>
     </div>

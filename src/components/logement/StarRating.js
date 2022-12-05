@@ -5,11 +5,19 @@ import FilledStar from "../../assets/img/FilledStar.svg";
 function StarRating(rating) {
   return (
     <div className="rating">
-      {[...Array(parseInt(rating.rating))].map(() => {
-        return <img src={FilledStar} alt="Etoile pleine" />;
+      {[...Array(parseInt(rating.rating))].map((element, index) => {
+        return (
+          <img
+            key={"FilledStar" + index}
+            src={FilledStar}
+            alt="Etoile pleine"
+          />
+        );
       })}
-      {[...Array(5 - parseInt(rating.rating))].map(() => {
-        return <img src={EmptyStar} alt="Etoile vide" />;
+      {[...Array(5 - parseInt(rating.rating))].map((element, index) => {
+        return (
+          <img key={"EmptyStar" + index} src={EmptyStar} alt="Etoile vide" />
+        );
       })}
     </div>
   );
